@@ -1,0 +1,30 @@
+.icon-bar-sticky {
+    position: fixed;
+    top: 96%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar-sticky a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 10px;
+  }
+  
+  .icon-bar-sticky a:hover {
+    background-color: #000;
+  }
+  
+  .up {
+    background: rgb(228, 87, 5);
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }

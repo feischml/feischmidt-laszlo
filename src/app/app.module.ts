@@ -11,6 +11,9 @@ import { BookssectionComponent } from './bookssection/bookssection.component';
 import { FootersectionComponent } from './footersection/footersection.component';
 import { MindsetsectionComponent } from './mindsetsection/mindsetsection.component';
 
+// import smooth scroll
+import { SmoothScrollToDirective, SmoothScrollDirective } from "ng2-smooth-scroll";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +24,9 @@ import { MindsetsectionComponent } from './mindsetsection/mindsetsection.compone
     WhyandwhatsectionComponent,
     BookssectionComponent,
     FootersectionComponent,
-    MindsetsectionComponent
+    MindsetsectionComponent,
+    SmoothScrollToDirective,
+    SmoothScrollDirective
   ],
   imports: [
     BrowserModule
