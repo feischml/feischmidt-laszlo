@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Renderer } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SmoothScrollToDirective } from 'ng2-smooth-scroll';
 
 @Component({
@@ -9,9 +9,7 @@ import { SmoothScrollToDirective } from 'ng2-smooth-scroll';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private scroll: SmoothScrollToDirective = new SmoothScrollToDirective(),
-               private element: ElementRef,
-               private renderer: Renderer
+  constructor( private scroll: SmoothScrollToDirective = new SmoothScrollToDirective()
   ){ }
 
   ngOnInit() {
@@ -29,12 +27,9 @@ export class HeaderComponent implements OnInit {
   }
 
   private closeNavbar(){
-    let navbar = this.element.nativeElement.querySelector('#navcol-1');
-    //navbar.collapse('hide');
-    console.log(navbar);
-    this.renderer.setElementClass(navbar, 'in', false);
-
-    //this.renderer.setElementClass(this.element.nativeElement.querySelector('#navcol-1'), 'collapse', hide); 
+    let button: HTMLElement = document.getElementById('buttonheader');
+    if (button.getAttribute('class') == 'navbar-toggler')
+      button.click();
   }
 
 }
