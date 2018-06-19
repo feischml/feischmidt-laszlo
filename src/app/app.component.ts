@@ -14,7 +14,7 @@ export class AppComponent {
   constructor( private scroll: SmoothScrollToDirective = new SmoothScrollToDirective()
   ){ }
 
-  private scrollTo(divId: String){
+  public scrollTo(divId: String){
     this.scroll.scrollTo = divId;
     this.scroll.duration = 1500;
     this.scroll.offset = 80;

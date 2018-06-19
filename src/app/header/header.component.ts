@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  private scrollTo(divId: String){
+  public scrollTo(divId: String){
     this.scroll.scrollTo = divId;
     this.scroll.duration = 2500;
     this.scroll.offset = 80;

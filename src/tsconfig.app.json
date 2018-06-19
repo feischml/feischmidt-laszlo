@@ -9,5 +9,17 @@
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
+  ],
+  "files": [
+    "test.ts",
+    "polyfills.ts",
+    "../node_modules/ng2-smooth-scroll/index.ts"
+
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "../src/**/*",
+    "**/*.d.ts",
+    "../node_modules/ng2-smooth-scroll/index.ts"
   ]
 }
